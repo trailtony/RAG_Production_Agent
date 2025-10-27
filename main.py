@@ -1,6 +1,13 @@
-def main():
-    print("Hello from rag-production-agent!")
+import logging
+from fastapi import FastAPI
+import inngest
+import inngest.fast_api
+from inngest.experimental import ai
+from dotenv import load_dotenv
+import uuid
+import os
+import datetime
+
+load_dotenv()
 
 
-if __name__ == "__main__":
-    main()
